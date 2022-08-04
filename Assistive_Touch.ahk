@@ -1,17 +1,18 @@
-﻿IfNotExist, floating_ui2.png
-  FileInstall, C:\Users\Huawei\C_Documents\ahk_files\assistive\floating_ui2.png, floating_ui2.png
+﻿IfNotExist, floating_ui_new.png
+  FileInstall, D:\Documents\GitHub\Assistive_Touch_PC\floating_ui_new.png, floating_ui_new.png
 SetBatchLines, -1
 
 Gui,+AlwaysOnTop +LastFound -Caption +ToolWindow 
-WinSet,Transcolor, FFD700 126
+
+WinSet,Transcolor, FFFFFF 126
 Gui,Margin,0,0
 Gui, Font, s40 Bold Center, Consolas
-Gui, Add, Button, x12 y12 w55 h55 Gdragon, ⮌
-Gui, Add, Button, x83 y12 w55 h55 Gdragon2, ⮟
-Gui, Add, Button, x12 y82 w55 h55 Gdragon3, ⮜
-Gui, Add, Button, x83 y82 w55 h55 Gdragon4, ⮞
-Gui Color, 0xffd700 ; this color has been transparented
-Gui,Add,Picture,x0 y0 w150 h150 +BackgroundTrans Center GuiMove,floating_ui2.png
+Gui, Add, Button, x22 y22 w55 h55 Gdragon, ⮌
+Gui, Add, Button, x93 y22 w55 h55 Gdragon2, ⮟
+Gui, Add, Button, x22 y92 w55 h55 Gdragon3, ⮜
+Gui, Add, Button, x93 y92 w55 h55 Gdragon4, ⮞
+Gui Color, 0xffffff ; this color has been transparented
+Gui,Add,Picture,x0 y0 w170 h170 +BackgroundTrans Center GuiMove,floating_ui_new.png
 Gui,Show,
 return
 
